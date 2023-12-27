@@ -1,0 +1,95 @@
+1.  for the given JSON iterate over all for loops(for,for in, for of, for each)
+
+ 1st for in loop
+
+ var mydetails = {
+ "Name":"Chowdareddy N V",
+ "Age":25,
+ "Degree":"B.Tech",
+ "Address":"kolar,Bengaluru",
+ "Number":"+919012345678",
+ };
+
+ for (var i in mydetails){
+ console.log(i,mydetails[i]);
+ }
+
+
+  2nd for loop
+ var mydetails1 = [{
+ "Name":"Chowdareddy N V",
+ "Age":25,
+ "Degree":"B.Tech",
+ "Address":"kolar,Bengaluru",
+ "Number":"+919012345678"
+
+ }]
+ for(var i=0;i<mydetails1.length;i++){
+     console.log(mydetails1[i]);
+    
+ }
+
+  3rd for of loop:
+
+ const result11 = [10,20,30,40,50]
+ for(var newresult11 of result11){
+     console.log(newresult11);
+ }
+
+ 4th for each loop
+
+ var result12 = [100,101,102,103,104,105]
+ result12.forEach(numbers=>{console.log(numbers)});
+
+
+2.create your own resume data in json format
+ const myResume={
+     "basics": {
+         "name": "Chowdareddy N V",
+         "email": "reddy@gamil.com",
+         "phone": 9012345678,
+         "degree": "B.Tech",
+         "location": {
+           "address": "1,jayanagar,kolar",
+           "postalCode": 563137,
+           "city": "Bengaluru",
+           "state": "Karnataka",
+           "country": "India"
+         },
+         "profiles": [
+           {
+             "website": "https://www.linkedin.com/in/reddy",
+             "github":"https://github.com/reddy"
+           }
+         ]
+       },
+      
+       "education": [
+         {
+           "institution": "C Byregowda Institite of Technology College",
+           "department": "Computer SCience",
+           "studyType": "fulltime",
+           "batch start year": 2018,
+           "batch end year": 2022,
+           "CGPA": 7.4,
+         }
+       ],
+       "skills": [
+         {
+           "name": "javascript",
+           "level": "beginer",
+          
+         }
+       ],
+       "languages": [
+         {
+           "language": "Kannada,Enlish",
+         }
+       ],
+       "interests": [
+         {
+           "name": "Playing shuttle,Story reading,",
+         }
+       ]
+     }
+     console.log(myResume);
